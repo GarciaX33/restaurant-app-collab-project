@@ -1,0 +1,30 @@
+#search {
+    padding-left: 300px;
+    padding-right: 300px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#cards {
+  padding-left: 140px;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#media {
+    text-align: center;
+}
+
+#header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#logo {
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+body {
+    background-image: url("https://foodwastealliance.org/wp-content/uploads/2013/05/iStock_000021917347Small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
