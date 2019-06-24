@@ -9,7 +9,7 @@ function displayRestaurantInfo() {
             "user-key": "80a859005d228cbe6e5d4de4f886ebe8"
         }
     }).then(function (response) {
-        console.log(response);
+        console.log(response.best_rated_restaurant[0].restaurant.name);
     });
 
 };
