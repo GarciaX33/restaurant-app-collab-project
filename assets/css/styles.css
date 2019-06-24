@@ -1,31 +1,38 @@
+.container {
+    position: fixed;
+    color: black;
+    
+}
+
+.card-body {
+    background-color: rgb(245, 245, 245);
+}
+
 #search {
     padding-left: 300px;
     padding-right: 300px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     filter: drop-shadow(5px 5px 5px #222);
 }
-
-#cards {
-  padding-left: 140px;
-  filter: drop-shadow(5px 5px 5px #222);
-}
-
+  
 #media {
     text-align: center;
 }
 
-#header {
-    padding-top: 25px;
-    padding-bottom: 50px;
-    text-align: center;
-}
+
 #logo {
+    position: fixed;
+    margin: top 0px;
     filter: drop-shadow(5px 5px 5px #222);
+    align-content: center;
+    margin-left: 225px;
+    
 }
 
 body {
-    background-image: url("https://foodwastealliance.org/wp-content/uploads/2013/05/iStock_000021917347Small.jpg");
+    background-image: url("http://www.cutehdwallpapers.com/uploads/large/food/delicious-food-hd-wallpapers.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
