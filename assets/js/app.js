@@ -10,8 +10,11 @@ function displayRestaurantInfo() {
         }
     }).then(function (res) {
         console.log(res.best_rated_restaurant);
-        $("#media").append("<div><b>Rated:</b> "+res.best_rated_restaurant[2].restaurant.name+"<div>");
-        $("#media").append("<div><img src="+res.best_rated_restaurant[2].restaurant.photos[2].photo.url+"><div>");
+        $(".bottomCard").append("<div><img src="+res.best_rated_restaurant[3].restaurant.photos[1].photo.url+"><div>");
+        $(".bottomCard").append("<div class='restName'><strong>"+res.best_rated_restaurant[3].restaurant.name+"</strong> <div>");
+        $(".bottomCard").append("<div class='restName'>"+res.best_rated_restaurant[3].restaurant.location.address+"<div>");
+        $(".bottomCard").append("<div class='bottomCardButton'><button>View Details</button><div>");
+        // $(".bottomCard").append("<div><img src="+res.best_rated_restaurant[2].restaurant.featured_image+"><div>");
         
         
     });
