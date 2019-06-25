@@ -26,7 +26,7 @@ var searchInput = document.getElementById('searchInput');
 
 function searchAdd() {
     var searchValue = searchInput.value;
-    console.log(searchValue);
+    // console.log(searchValue);
 }
 
 
