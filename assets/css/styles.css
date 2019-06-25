@@ -11,16 +11,36 @@
 #search {
     padding-left: 300px;
     padding-right: 300px;
+
+    padding-bottom: 100px;
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+#cards {
+  padding-left: 140px;
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+}
+
+
     padding-bottom: 50px;
     filter: drop-shadow(5px 5px 5px #222);
 }
   
+
 #media {
     text-align: center;
+    font-weight: 600;
 }
 
 
 #logo {
+
+    filter: drop-shadow(5px 5px 5px rgb(238, 255, 0));
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500");
+=======
     position: fixed;
     margin: top 0px;
     filter: drop-shadow(5px 5px 5px #222);
@@ -31,6 +51,7 @@
 
 body {
     background-image: url("http://www.cutehdwallpapers.com/uploads/large/food/delicious-food-hd-wallpapers.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 4px 4px 4px #aaa;
