@@ -11,7 +11,7 @@ function displayRestaurantInfo() {
     }).then(function (res) {
         console.log(res.best_rated_restaurant);
         $("#media").append("<div><b>Rated:</b> "+res.best_rated_restaurant[2].restaurant.name+"<div>");
-        $("#media").append("<div><img src="+res.best_rated_restaurant[2].restaurant.photos_url+"><div>");
+        $("#media").append("<div><img src="+res.best_rated_restaurant[2].restaurant.photos[2].photo.url+"><div>");
         
         
     });
