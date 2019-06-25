@@ -28,7 +28,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bottomCard img {
+    height: 50%;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.restName {
+    text-align: center;
+}
+
+.bottomCardButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
  #map {
     height: 300px;
     width: 500px;
   }
+
