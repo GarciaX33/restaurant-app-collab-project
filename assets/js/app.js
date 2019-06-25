@@ -8,12 +8,25 @@ function displayRestaurantInfo() {
         headers: {
             "user-key": "80a859005d228cbe6e5d4de4f886ebe8"
         }
-    }).then(function (response) {
-        console.log(response);
+    }).then(function (res) {
+        console.log(res.best_rated_restaurant);
+        $("#media").append("<div><b>Rated:</b> "+res.best_rated_restaurant[2].restaurant.name+"<div>");
+        $("#media").append("<div><img src="+res.best_rated_restaurant[2].restaurant.photos_url+"><div>");
+        
+        
     });
 
 };
 displayRestaurantInfo();
+
+var searchInput = document.getElementById('searchInput');
+
+function searchAdd() {
+    var searchValue = searchInput.value;
+    console.log(searchValue);
+}
+
+
 
 
 //   "accept": "application/json",
