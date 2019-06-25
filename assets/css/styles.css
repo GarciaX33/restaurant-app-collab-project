@@ -28,4 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+ #map {
+    height: 300px;
+    width: 500px;
+  }
