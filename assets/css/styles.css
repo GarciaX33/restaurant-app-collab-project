@@ -5,6 +5,10 @@
 #card {
     filter: drop-shadow(5px 5px 5px rgb(68, 68, 67));
 }
+#order {
+    margin-left: -10%;
+    margin-right: 10%;
+}
 
 .container {
     color: black;
@@ -21,7 +25,8 @@
 }
 
 #widget {
-    margin-left: 100px;
+   margin-right: -100%;
+
 }
 
 #logo {
@@ -63,7 +68,7 @@ body {
  #map {
     height: 90%;
     width: 100%;
-    margin-left: 0px;
+    margin-left: -20px;
   }
 
   #cardSize {
