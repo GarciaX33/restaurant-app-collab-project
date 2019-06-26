@@ -76,6 +76,7 @@ function displayRestaurantInfo() {
     });
 
 };
+// Will call displayRestaurantInfo Function
 displayRestaurantInfo();
 
 var searchInput = document.getElementById('searchInput');
