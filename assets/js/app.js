@@ -124,12 +124,21 @@ function showPosition(position) {
         };
         map = new google.maps.Map(document.getElementById('map'), myOptions);
 
+        var image = 'assets/images/heremarker.png';
+
+        var marker = new google.maps.Marker({
+            position: { lat: x, lng: y },
+            icon: image,
+            zoom: 20,
+            map: map
+        });
         var infowindow = new google.maps.InfoWindow();
 
         var marker, i;
 
         for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
+                animation: google.maps.Animation.DROP,
                 position: new google.maps.LatLng(locations[i][0], locations[i][1]),
                 map: map
             });
