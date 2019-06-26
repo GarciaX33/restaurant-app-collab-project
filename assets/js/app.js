@@ -90,15 +90,11 @@ function displayRestaurantInfo() {
         // Card 10
         $(".bottomCard10").append("<div><img src=" + br[9].restaurant.photos[9].photo.url + "><div>");
         $(".bottomCard10").append("<div class='restName'><strong>" + br[9].restaurant.name + "</strong> <div>");
-
         $(".bottomCard10").append("<div class='restName'><strong>Hours:</strong>" + br[9].restaurant.timings + "<div>");
         $(".bottomCard10").append("<div class='restName'><strong>Restaurant Numbers:</strong>" + br[9].restaurant.phone_numbers + "<div>");
         $(".bottomCard10").append("<div class='restName'><strong>Highlights:</strong>" + br[9].restaurant.highlights + "<div>");
         $(".bottomCard10").append(`<button onclick="window.open('${br[9].restaurant.menu_url}', '_blank' )">View Menu</button>`);
         
-
-        $(".bottomCard10").append("<div class='restName'>" + br[9].restaurant.location.address + "<div>");
-        $(".bottomCard10").append("<div class='bottomCardButton'><button>View Details</button><div>");
 
 
     });
