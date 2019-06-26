@@ -35,7 +35,7 @@ function displayRestaurantInfo() {
         $(".bottomCard2").append("<div class='restName'><strong>Hours:</strong>" + br[1].restaurant.timings + "<div>");
         $(".bottomCard2").append("<div class='restName'><strong>Restaurant Numbers:</strong>" + br[1].restaurant.phone_numbers + "<div>");
         $(".bottomCard2").append("<div class='restName'><strong>Highlights:</strong>" + br[1].restaurant.highlights + "<div>");
-        $(".bottomCard2").append("<button onclick='window.location.href =&quot;" + br[1].restaurant.menu_url +  "&quot;'>View Menu</button>");
+        $(".bottomCard2").append(`<button onclick="window.open('${br[1].restaurant.menu_url}', '_blank' )">View Menu</button>`);
         // Card 3
         $(".bottomCard3").append("<div><img src=" + br[2].restaurant.photos[2].photo.url + "><div>");
         $(".bottomCard3").append("<div class='restName'><strong>" + br[2].restaurant.name + "</strong> <div>");
