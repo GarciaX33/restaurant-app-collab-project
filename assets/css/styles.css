@@ -57,12 +57,22 @@ body {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-.bottomCard img {
+/* Cards */
+
+.bottomCard1 img, .bottomCard2 img, .bottomCard3 img, .bottomCard4 img, .bottomCard5 img {
     height: 50%;
     width: 95%;
     margin: 10px;
     padding: 10px;
 }
+/* Cards 2 */
+.bottomCard6 img, .bottomCard7 img, .bottomCard8 img, .bottomCard9 img, .bottomCard10 img {
+    height: 50%;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+
 
 .restName {
     text-align: center;
