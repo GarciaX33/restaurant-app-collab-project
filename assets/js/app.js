@@ -12,8 +12,8 @@ function displayRestaurantInfo() {
             "user-key": "80a859005d228cbe6e5d4de4f886ebe8"
         }
     }).then(function (res) {
-        console.log(res)
-        // console.log(res.best_rated_restaurant);
+
+        console.log(res.best_rated_restaurant);
 
         var br = res.best_rated_restaurant;
         for (var i = 0; i < br.length; i++) {
@@ -59,7 +59,7 @@ function getLocation() {
 function showPosition(position) {
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
-    console.log(lat, long);
+
 
     $.ajax({
         url: googleURL,
