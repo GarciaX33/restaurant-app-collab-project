@@ -75,7 +75,15 @@ body {
       height: 100%;
       width: 100%;
   }
+
+
+  .scroll {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
 .gm-style-iw-t img {
     width: 15px;
     height: auto;
 }
+
