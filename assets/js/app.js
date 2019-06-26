@@ -3,7 +3,7 @@ console.log(locations)
 
 function displayRestaurantInfo() {
 
-    var queryURL = "https://developers.zomato.com/api/v2.1/location_details?entity_id=276&entity_type=city";
+    var queryURL = "https://developers.zomato.com/api/v2.1/location_details?entity_id=276&entity_type=city&limit=9";
 
     $.ajax({
         url: queryURL,
@@ -20,7 +20,7 @@ function displayRestaurantInfo() {
 
             var address = [br[i].restaurant.location.latitude, br[i].restaurant.location.longitude, br[i].restaurant.name]
 
-            locations.push(address) 
+            locations.push(address)
         }
         // Card 1
         $(".bottomCard1").append("<div><img src=" + br[0].restaurant.photos[0].photo.url + "><div>");
@@ -88,11 +88,17 @@ function displayRestaurantInfo() {
         // Card 10
         $(".bottomCard10").append("<div><img src=" + br[9].restaurant.photos[9].photo.url + "><div>");
         $(".bottomCard10").append("<div class='restName'><strong>" + br[9].restaurant.name + "</strong> <div>");
+
         $(".bottomCard10").append("<div class='restName'><strong>Hours:</strong>" + br[9].restaurant.timings + "<div>");
         $(".bottomCard10").append("<div class='restName'><strong>Restaurant Numbers:</strong>" + br[9].restaurant.phone_numbers + "<div>");
         $(".bottomCard10").append("<div class='restName'><strong>Highlights:</strong>" + br[9].restaurant.highlights + "<div>");
         $(".bottomCard10").append(`<button onclick="window.open('${br[9].restaurant.menu_url}', '_blank' )">View Menu</button>`);
         
+
+        $(".bottomCard10").append("<div class='restName'>" + br[9].restaurant.location.address + "<div>");
+        $(".bottomCard10").append("<div class='bottomCardButton'><button>View Details</button><div>");
+
+
     });
 
 };
