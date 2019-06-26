@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 var locations = [];
 console.log(locations)
 
@@ -175,3 +176,4 @@ getLocation();
 
 var googleURL = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDse6C2zpZnZ0N-ZdhDVsTRmgNyBHlUlM8&libraries=places';
 
+});
