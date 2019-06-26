@@ -18,7 +18,8 @@ function displayRestaurantInfo() {
         var br = res.best_rated_restaurant;
         for (var i = 0; i < br.length; i++) {
 
-            var address = [br[i].restaurant.location.latitude, br[i].restaurant.location.longitude, br[i].restaurant.name]
+            var address = [br[i].restaurant.location.latitude, br[i].restaurant.location.longitude, br[i].restaurant.name, br[i].restaurant.user_rating.aggregate_rating, br[i].restaurant.location.address]
+            console.log(address);
 
             locations.push(address)
         }
@@ -133,9 +134,11 @@ function showPosition(position) {
                 map: map
             });
 
+
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
-                    infowindow.setContent(locations[i][2]);
+                    infowindow.setContent('<div>' + '<h1 id=firstHeading class=firstHeading>' + locations[i][2] + '</h1>'
+                        + '<div>' + '<h6>Rating:<h6>' + '<h6><strong>' + locations[i][3] + '<img src="assets/images/STAR.png">' + '</strong></h6>' + '</strong>' + '</div>' + '<div>' + '<h6>Address:</h6>' + '<h6><strong>' + locations[i][4] + '</strong>' + '</div>' + '</div>');
                     infowindow.open(map, marker);
                 }
             })(marker, i));

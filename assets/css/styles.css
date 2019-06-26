@@ -56,9 +56,9 @@ body {
     padding: 10px;
 }
 
- {
+ 
     
-}
+
 
  #map {
     height: 90%;
@@ -70,4 +70,7 @@ body {
       height: 100%;
       width: 100%;
   }
-
+.gm-style-iw-t img {
+    width: 15px;
+    height: auto;
+}
