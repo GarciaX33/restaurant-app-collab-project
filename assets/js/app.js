@@ -1,7 +1,9 @@
+// document ready function
 $( document ).ready(function() {
 var locations = [];
 console.log(locations)
 
+// function to display restaurant info on the screen
 function displayRestaurantInfo() {
 
     var queryURL = "https://developers.zomato.com/api/v2.1/location_details?entity_id=276&entity_type=city&limit=9";
