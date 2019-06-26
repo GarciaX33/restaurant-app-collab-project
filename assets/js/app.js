@@ -49,14 +49,14 @@ function displayRestaurantInfo() {
         $(".bottomCard4").append("<div class='restName'><strong>Hours:</strong>" + br[3].restaurant.timings + "<div>");
         $(".bottomCard4").append("<div class='restName'><strong>Restaurant Numbers:</strong>" + br[3].restaurant.phone_numbers + "<div>");
         $(".bottomCard4").append("<div class='restName'><strong>Highlights:</strong>" + br[3].restaurant.highlights + "<div>");
-        $(".bottomCard4").append("<button onclick='window.location.href =&quot;" + br[3].restaurant.menu_url +  "&quot;'>View Menu</button>");
+        $(".bottomCard4").append(`<button onclick="window.open('${br[3].restaurant.menu_url}', '_blank' )">View Menu</button>`);
         // Card 5
         $(".bottomCard5").append("<div><img src=" + br[4].restaurant.photos[4].photo.url + "><div>");
         $(".bottomCard5").append("<div class='restName'><strong>" + br[4].restaurant.name + "</strong> <div>");
         $(".bottomCard5").append("<div class='restName'><strong>Hours:</strong>" + br[4].restaurant.timings + "<div>");
         $(".bottomCard5").append("<div class='restName'><strong>Restaurant Numbers:</strong>" + br[4].restaurant.phone_numbers + "<div>");
         $(".bottomCard5").append("<div class='restName'><strong>Highlights:</strong>" + br[4].restaurant.highlights + "<div>");
-        $(".bottomCard5").append("<button onclick='window.location.href =&quot;" + br[4].restaurant.menu_url +  "&quot;'>View Menu</button>");
+        $(".bottomCard5").append(`<button onclick="window.open('${br[4].restaurant.menu_url}', '_blank' )">View Menu</button>`);
         // Card 6
         $(".bottomCard6").append("<div><img src=" + br[5].restaurant.photos[5].photo.url + "><div>");
         $(".bottomCard6").append("<div class='restName'><strong>" + br[5].restaurant.name + "</strong> <div>");
